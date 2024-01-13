@@ -1,7 +1,6 @@
 plugins {
-    kotlin("jvm") version "1.5.21"
+    kotlin("jvm") version "1.9.21"
     kotlin("plugin.serialization") version "1.5.21"
-
 }
 group = "com.unongmilk"
 version = "1.0.0"
@@ -31,6 +30,7 @@ dependencies {
     compileOnly("io.papermc.paper:paper-api:1.20.1-R0.1-SNAPSHOT")
     compileOnly("org.spigotmc:spigot-api:1.20.1-R0.1-SNAPSHOT")
     compileOnly("org.spigotmc:spigot:1.20.1-R0.1-SNAPSHOT")
+    implementation("io.github.monun:kommand-api:3.1.7")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
     testImplementation("org.junit.jupiter:junit-jupiter-engine:5.9.2")
